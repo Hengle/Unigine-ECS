@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+		<AssemblyName>Unigine-ECS</AssemblyName>
+		<RootNamespace>UnigineApp</RootNamespace>
+		<StartupObject>UnigineApp.UnigineApp</StartupObject>
+		<WarningLevel>4</WarningLevel>
+		<IntermediateOutputPath>junk\$(Configuration)\</IntermediateOutputPath>
+		<OutputPath>bin</OutputPath>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<SkipPostBuild>false</SkipPostBuild>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<AssemblyName>Unigine-ECS_x64</AssemblyName>
+		<PlatformTarget>x64</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<DefineConstants>TRACE;NDEBUG;</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+		<AssemblyName>Unigine-ECS_x64d</AssemblyName>
+		<PlatformTarget>x64</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<DefineConstants>TRACE;DEBUG;</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="UnigineSharp">
+			<SpecificVersion>false</SpecificVersion>
+			<HintPath Condition="'$(Configuration)'=='Debug'">bin\UnigineSharpCore_x64d.dll</HintPath>
+			<HintPath Condition="'$(Configuration)'=='Release'">bin\UnigineSharpCore_x64.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\csharp_template\first_person_controller\components\FirstPersonController.cs" />
+    <Compile Include="source\AppEditorLogic.cs" />
+    <Compile Include="source\AppSystemLogic.cs" />
+    <Compile Include="source\AppWorldLogic.cs" />
+    <Compile Include="source\main.cs" />
+    <Compile Include="source\UnigineEcs\Core.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Flecs.ecs.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Flecs.Macros.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Flecs.Types.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Flecs._ecs.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\HLAPI\Systems\ASystem.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\HLAPI\Systems\SystemSignatureBuilder.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\StructPartials\OsApi.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\StructPartials\Rows.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\StructPartials\TableData.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\StructPartials\VectorParams.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\StructPartials\World.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Utils\Caches.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Utils\CharPtr.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Utils\InteropUtils.cs" />
+    <Compile Include="source\UnigineEcs\Flecs\Utils\MemoryUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="enet.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libflecs_shared.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="dotnet $(OutputPath)cspropgen_core_x64d.dll -p $(OutputPath)$(AssemblyName).dll -data_path ../data/" Condition="'$(Configuration)'=='Debug' And $(SkipPostBuild)=='false'" />
+		<Exec Command="dotnet $(OutputPath)cspropgen_core_x64.dll -p $(OutputPath)$(AssemblyName).dll -data_path ../data/" Condition="'$(Configuration)'=='Release' And $(SkipPostBuild)=='false'" />
+	</Target>	
+</Project>
