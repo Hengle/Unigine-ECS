@@ -57,6 +57,7 @@
     <Compile Include="source\AppWorldLogic.cs" />
     <Compile Include="source\main.cs" />
     <Compile Include="source\UnigineEcs\Core.cs" />
+    <Compile Include="source\UnigineEcs\Macros.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Flecs.ecs.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Flecs.Macros.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Flecs.Types.cs" />
@@ -72,6 +73,9 @@
     <Compile Include="source\UnigineEcs\Flecs\Utils\CharPtr.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Utils\InteropUtils.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Utils\MemoryUtils.cs" />
+    <Compile Include="source\UnigineEcs\HLAPI\ComponentSystem.cs" />
+    <Compile Include="source\UnigineEcs\Message.cs" />
+    <Compile Include="source\UnigineEcs\TestSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bake_util.dll">

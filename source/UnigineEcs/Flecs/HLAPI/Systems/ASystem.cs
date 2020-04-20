@@ -11,11 +11,6 @@ namespace Flecs
 
     public abstract class ASystem<T> : ISystem where T : unmanaged
     {
-        public ASystem(World world)
-        {
-            ECS_SYSTEM<T>(world, Tick, SystemKind.OnUpdate);
-        }
-
         string ISystem.Signature => typeof(T).Name;
 
         unsafe void ISystem.Tick(ref Rows rows)

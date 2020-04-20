@@ -6,14 +6,14 @@ namespace Flecs
 	unsafe partial struct World : IDisposable
 	{
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public static World Create(bool enableAdmin = false)
+		public static World Create(ushort adminPort = default)
 		{
 			var world = ecs.init();
 			Caches.RegisterWorld(world);
 
-			if(enableAdmin)
+			if(adminPort != default)
 			{
-				ecs.enable_admin(world, 9090);
+				ecs.enable_admin(world, adminPort);
 			}
 
 			return world;
