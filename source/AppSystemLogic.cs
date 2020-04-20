@@ -4,46 +4,45 @@ using System.Linq;
 using System.Text;
 
 using Unigine;
+using UnigineECS;
 
 namespace UnigineApp
 {
-	class AppSystemLogic : SystemLogic
-	{
-		// System logic, it exists during the application life cycle.
-		// These methods are called right after corresponding system script's (UnigineScript) methods.
+    class AppSystemLogic : SystemLogic
+    {
+        // System logic, it exists during the application life cycle.
+        // These methods are called right after corresponding system script's (UnigineScript) methods.
 
-		public AppSystemLogic()
-		{
-		}
+        public AppSystemLogic()
+        {
+        }
 
-		public override bool Init()
-		{
-			// Write here code to be called on engine initialization.
+        public override bool Init()
+        {
+            Core.Init();
+            return true;
+        }
 
-			return true;
-		}
+        // start of the main loop
+        public override bool Update()
+        {
+            Core.Update();
+            return true;
+        }
 
-		// start of the main loop
-		public override bool Update()
-		{
-			// Write here code to be called before updating each render frame.
+        public override bool PostUpdate()
+        {
+            // Write here code to be called after updating each render frame.
 
-			return true;
-		}
+            return true;
+        }
+        // end of the main loop
 
-		public override bool PostUpdate()
-		{
-			// Write here code to be called after updating each render frame.
-
-			return true;
-		}
-		// end of the main loop
-
-		public override bool Shutdown()
-		{
-			// Write here code to be called on engine shutdown.
-
-			return true;
-		}
-	}
+        public override bool Shutdown()
+        {
+            // Write here code to be called on engine shutdown.
+            Core.Shutdown();
+            return true;
+        }
+    }
 }

@@ -12,7 +12,7 @@ namespace Flecs
 			public EntityId parent;
 		}
 
-		internal const string NativeLibName = "libflecs_shared";
+		internal const string NativeLibName = "flecs";
 
 		public static readonly TypeId TEcsComponent = InteropUtils.LoadTypedSymbol<TypeId>("TEcsComponent");
 		public static readonly TypeId TEcsTypeComponent = InteropUtils.LoadTypedSymbol<TypeId>("TEcsTypeComponent");

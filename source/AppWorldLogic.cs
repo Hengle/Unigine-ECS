@@ -18,14 +18,12 @@ namespace UnigineApp
 
 		public override bool Init()
 		{
-			UnigineECS.Core.Init();
 			return true;
 		}
 
 		// start of the main loop
 		public override bool Update()
 		{
-			UnigineECS.Core.Update();
 			return true;
 		}
 
