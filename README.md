@@ -1,7 +1,13 @@
 # Unigine-ECS
 Unigine-ECS is a blazing Fast and Lightweight ECS (Entity Component System). for Unigine Game Engine. 
 <br>
-Currently Work in Progress.
+
+---
+Dashboard requires bake(included) to be properly set up. 
+<br>
+For ``Windows``: simply copy ``bake`` folder provided in ``dependencies`` folder into ``C:\Users\YOUR_USERNAME\``
+<br>
+Any other platform follow bake [steps](https://github.com/SanderMertens/bake)
 
 ![dashboard](img/Dashboard.gif)
 
