@@ -16,12 +16,12 @@ namespace UnigineECS
         public static void Init()
         {
             App.SetBackgroundUpdate(true);
-            Log.Message("{0}", $"\nUnigineECS {stringVersion} has been initialized.\n");
 
             mainWorld = World.Create(9090);
             ecs.set_threads(mainWorld, (uint)Environment.ProcessorCount);
 
             new TestSystem(mainWorld);
+            Log.Message("{0}", $"\nUnigineECS {stringVersion} has been initialized.\n");
         }
 
         public static void Update()
