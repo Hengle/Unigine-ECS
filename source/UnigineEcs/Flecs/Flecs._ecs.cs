@@ -5,7 +5,7 @@ using System.Security;
 namespace Flecs
 {
     [SuppressUnmanagedCodeSecurity]
-    internal unsafe static class _ecs
+    public unsafe static class _ecs
     {
         ///<summary>
         /// Create a new entity. Entities are light-weight objects that represent "things" in the application. Entities themselves do not have any state or logic, but instead are composed out of a set of zero or more components.
@@ -17,7 +17,7 @@ namespace Flecs
         ///</returns>
         ///<remarks>
         /// Entities are accessed through handles instead of direct pointers. Certain operations may move an entity in memory. Handles provide a safe mechanism for addressing entities.
-        /// Flecs does not require applications to explicitly create handles, as entities do not have an explicit lifecycle. The new_entity operation merely provides a convenient way to dispense handles. It is guaranteed that the handle returned by new_entity has not bee returned before.
+        /// Flecs does not require applications to explicitly create handles, as entities do not have an explicit lifecycle. The new_entity operation merely provides a convenient way to dispense handles. It is guaranteed that the handle returned by new_entity has not been returned before.
         /// ecs_new_entity ecs_new_component ecs_new_system ecs_new_prefab ecs_new_type new_child new_w_count
         ///</remarks>
         ///<code>

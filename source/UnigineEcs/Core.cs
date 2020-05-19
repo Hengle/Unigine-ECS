@@ -47,7 +47,9 @@ namespace UnigineECS
 
         public static void Update()
         {
+            Profiler.Begin("flecs Update");
             ecs.progress(mainWorld, Game.IFps);
+            Profiler.End();
         }
 
         public static void Shutdown()

@@ -78,10 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bake_util.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="flecs.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -282,9 +282,9 @@ namespace Flecs
 
         public uint rowCount; //size: 4, offset:0
         public uint columnCount; //size: 4, offset:4
-        internal EntityId* entities; //size: 8, offset:8
-        internal EntityId* components; //size: 8, offset:16
-        internal void* columns; //size: 8, offset:24
+        public EntityId* entities; //size: 8, offset:8
+        public EntityId* components; //size: 8, offset:16
+        public void* columns; //size: 8, offset:24
     }
 
     //ecs_type_filter_t
