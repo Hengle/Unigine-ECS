@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Flecs;
+using System;
 using System.Runtime.CompilerServices;
 using static Flecs.Macros;
+using static UnigineECS.Macros;
 
-namespace Flecs
+namespace UnigineECS
 {
     public abstract class ComponentSystem
     {

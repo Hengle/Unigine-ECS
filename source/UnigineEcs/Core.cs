@@ -1,17 +1,16 @@
 ﻿using Flecs;
 using System;
-using System.Linq;
-using Unigine;
-using World = Flecs.World;
-using static Flecs.Macros;
 using System.Reflection;
+using Unigine;
+using static Flecs.Macros;
+using World = Flecs.World;
 
 namespace UnigineECS
 {
     internal static class Core
     {
         private const uint version = (0 << 16) | (0 << 8) | (1);
-        static string stringVersion => (version >> 16 & 0xFF) + "." + (version >> 8 & 0xFF) + "." + (version & 0xFF);
+        private static readonly string stringVersion = (version >> 16 & 0xFF) + "." + (version >> 8 & 0xFF) + "." + (version & 0xFF);
 
         private static World mainWorld = default;
 
@@ -41,7 +40,9 @@ namespace UnigineECS
 
         private static void CreateMainWorld()
         {
-            mainWorld = World.Create(9090);
+            mainWorld = World.Create();
+
+            ecs.enable_admin(mainWorld, 9090);
             ecs.set_threads(mainWorld, (uint)Environment.ProcessorCount);
         }
 
@@ -55,6 +56,7 @@ namespace UnigineECS
         public static void Shutdown()
         {
             mainWorld.Quit();
+            mainWorld.Fini();
         }
     }
 }
