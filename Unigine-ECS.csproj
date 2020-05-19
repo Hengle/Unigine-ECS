@@ -74,7 +74,7 @@
     <Compile Include="source\UnigineEcs\Flecs\Utils\InteropUtils.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Utils\MemoryUtils.cs" />
     <Compile Include="source\UnigineEcs\Sample\Message.cs" />
-    <Compile Include="source\UnigineEcs\Sample\TestSystem.cs" />
+    <Compile Include="source\UnigineEcs\Sample\TestMessageSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bake_util.dll">

@@ -1,4 +1,5 @@
 ﻿using Flecs;
+using System.Numerics;
 
 namespace UnigineECS
 {
