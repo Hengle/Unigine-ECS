@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Unigine;
 using UnigineECS;
 
 namespace UnigineApp
 {
-    class AppSystemLogic : SystemLogic
+    internal class AppSystemLogic : SystemLogic
     {
         // System logic, it exists during the application life cycle.
         // These methods are called right after corresponding system script's (UnigineScript) methods.
@@ -36,6 +31,7 @@ namespace UnigineApp
 
             return true;
         }
+
         // end of the main loop
 
         public override bool Shutdown()

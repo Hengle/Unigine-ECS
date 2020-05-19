@@ -2,7 +2,7 @@
 
 namespace UnigineECS
 {
-    public struct Message
+    public struct Message : IComponent
     {
         public CharPtr Value;
     }

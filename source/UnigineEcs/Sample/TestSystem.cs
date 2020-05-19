@@ -1,12 +1,11 @@
-﻿using Unigine;
-using World = Flecs.World;
-using Flecs;
+﻿using Flecs;
 using System;
-using static Flecs.Macros;
+using Unigine;
+using World = Flecs.World;
 
 namespace UnigineECS
 {
-    class TestSystem : ComponentSystem<Message>
+    public class TestSystem : ComponentSystem<Message>
     {
         public TestSystem(World world) : base(world, SystemKind.OnUpdate)
         {
@@ -18,9 +17,9 @@ namespace UnigineECS
         {
             for (int i = 0; i < rows.count; i++)
             {
-                Log.Message("{0}, Delta time: {1}", messages[i].Value, deltaTime);
+                Log.Message($"{messages[i].Value}, Delta time: {deltaTime} \n");
                 ecs.delete(world, rows[i]);
-            }         
+            }
         }
     }
 }
