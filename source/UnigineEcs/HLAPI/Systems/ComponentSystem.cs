@@ -16,9 +16,7 @@ namespace UnigineECS
             this.world = world;
         }
 
-        protected virtual void Tick(ref Rows rows)
-        {
-        }
+        protected abstract void Tick(ref Rows rows);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected EntityId CreateEntities<T>(uint count)
@@ -38,6 +36,7 @@ namespace UnigineECS
             ecs.delete(world, entity);
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected void SetComponent<T>(EntityId entity, T component) where T : unmanaged, IComponent
         {
             ecs.set(world, entity, component);

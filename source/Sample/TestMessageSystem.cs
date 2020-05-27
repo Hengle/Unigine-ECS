@@ -16,6 +16,7 @@ public class TestSystem : ComponentSystem<Message>
         for (int i = 0; i < rows.count; i++)
         {
             Log.Message($"{messages[i].Value}, Delta time: {deltaTime} \n");
+            DeleteEntity(rows[i]);
         }
     }
 }
