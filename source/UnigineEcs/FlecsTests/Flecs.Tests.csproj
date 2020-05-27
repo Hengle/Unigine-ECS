@@ -6,6 +6,8 @@
     <IsPackable>false</IsPackable>
 
     <OutputType>Library</OutputType>
+
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Flecs
+namespace UnigineECS
 {
 	/// <summary>
 	/// helper for building system signatures

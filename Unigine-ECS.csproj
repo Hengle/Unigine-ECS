@@ -18,6 +18,7 @@
 		<OutputPath>bin</OutputPath>
 		<EnableDefaultItems>false</EnableDefaultItems>
 		<SkipPostBuild>false</SkipPostBuild>
+		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">
 		<AssemblyName>Unigine-ECS_x64</AssemblyName>
@@ -32,7 +33,7 @@
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>full</DebugType>
 		<Optimize>false</Optimize>
-		<DefineConstants>TRACE;DEBUG;</DefineConstants>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -61,8 +62,8 @@
     <Compile Include="source\UnigineEcs\Flecs\Flecs.Macros.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Flecs.Types.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Flecs._ecs.cs" />
-    <Compile Include="source\UnigineEcs\Flecs\HLAPI\Systems\ASystem.cs" />
-    <Compile Include="source\UnigineEcs\Flecs\HLAPI\Systems\SystemSignatureBuilder.cs" />
+    <Compile Include="source\UnigineEcs\HLAPI\DisableAutoCreation.cs" />
+    <Compile Include="source\UnigineEcs\HLAPI\SystemSignatureBuilder.cs" />
     <Compile Include="source\UnigineEcs\Flecs\StructPartials\OsApi.cs" />
     <Compile Include="source\UnigineEcs\Flecs\StructPartials\Rows.cs" />
     <Compile Include="source\UnigineEcs\Flecs\StructPartials\TableData.cs" />
@@ -73,10 +74,10 @@
     <Compile Include="source\UnigineEcs\Flecs\Utils\InteropUtils.cs" />
     <Compile Include="source\UnigineEcs\Flecs\Utils\MemoryUtils.cs" />
     <Compile Include="source\UnigineEcs\HLAPI\Macros.cs" />
-    <Compile Include="source\UnigineEcs\HLAPI\ComponentSystem.cs" />
-    <Compile Include="source\UnigineEcs\HLAPI\IComponent.cs" />
-    <Compile Include="source\UnigineEcs\Sample\Message.cs" />
-    <Compile Include="source\UnigineEcs\Sample\TestMessageSystem.cs" />
+    <Compile Include="source\UnigineEcs\HLAPI\Systems\ComponentSystem.cs" />
+    <Compile Include="source\UnigineEcs\HLAPI\Components\IComponent.cs" />
+    <Compile Include="source\Sample\Message.cs" />
+    <Compile Include="source\Sample\TestMessageSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bake_util.dll">

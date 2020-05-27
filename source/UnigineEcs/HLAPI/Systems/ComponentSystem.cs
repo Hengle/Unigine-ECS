@@ -21,9 +21,26 @@ namespace UnigineECS
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public EntityId CreateEntities<T>(World world, uint count)
+        protected EntityId CreateEntities<T>(uint count)
         {
             return ecs.new_w_count(world, Caches.GetComponentTypeId(world, typeof(T)), count);
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        protected EntityId CreateEntity<T>()
+        {
+            return ecs.new_entity<Message>(world);
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        protected void DeleteEntity(EntityId entity)
+        {
+            ecs.delete(world, entity);
+        }
+
+        protected void SetComponent<T>(EntityId entity, T component) where T : unmanaged, IComponent
+        {
+            ecs.set(world, entity, component);
         }
     }
 

@@ -72,287 +72,287 @@
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246051122304"
+				"hash": "15902946361122304"
 			},
 			{
 				"file": "bin/ApplicationLauncher_x64d.exe",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246051399808"
+				"hash": "15902946361399808"
 			},
 			{
 				"file": "bin/EditorCore_x64.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460820788736"
+				"hash": "159029463620788224"
 			},
 			{
 				"file": "bin/EditorCore_x64d.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460928953088"
+				"hash": "159029463628946944"
 			},
 			{
 				"file": "bin/EditorCore_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824609124104704"
+				"hash": "1590294636124055552"
 			},
 			{
 				"file": "bin/Editor_x64.exe",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246074011768"
+				"hash": "15902946364011768"
 			},
 			{
 				"file": "bin/Editor_x64d.exe",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246085314808"
+				"hash": "15902946365312760"
 			},
 			{
 				"file": "bin/Editor_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460822450176"
+				"hash": "159029463622441984"
 			},
 			{
 				"file": "bin/FbxImporter_x64.dll",
 				"tags": [
 					"plugins"
 				],
-				"hash": "15898246117906816"
+				"hash": "15902946367906304"
 			},
 			{
 				"file": "bin/FbxImporter_x64d.dll",
 				"tags": [
 					"plugins"
 				],
-				"hash": "158982461210734080"
+				"hash": "159029463610733568"
 			},
 			{
 				"file": "bin/FbxImporter_x64d.pdb",
 				"tags": [
 					"plugins"
 				],
-				"hash": "158982461213029376"
+				"hash": "159029463613029376"
 			},
 			{
 				"file": "bin/GLTFImporter_x64.dll",
 				"tags": [
 					"plugins"
 				],
-				"hash": "1589824612602624"
+				"hash": "1590294636602624"
 			},
 			{
 				"file": "bin/GLTFImporter_x64d.dll",
 				"tags": [
 					"plugins"
 				],
-				"hash": "15898246121049088"
+				"hash": "15902946361049088"
 			},
 			{
 				"file": "bin/GLTFImporter_x64d.pdb",
 				"tags": [
 					"plugins"
 				],
-				"hash": "15898246125779456"
+				"hash": "15902946365779456"
 			},
 			{
 				"file": "bin/Qt5Concurrent.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460728672"
+				"hash": "159029463628672"
 			},
 			{
 				"file": "bin/Qt5Core.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246076105088"
+				"hash": "15902946366105088"
 			},
 			{
 				"file": "bin/Qt5Gui.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246076464000"
+				"hash": "15902946366464000"
 			},
 			{
 				"file": "bin/Qt5Network.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246071301504"
+				"hash": "15902946361301504"
 			},
 			{
 				"file": "bin/Qt5Widgets.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246075530624"
+				"hash": "15902946365530624"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64.deps.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610492"
+				"hash": "1590294636492"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246092066944"
+				"hash": "15902946362092544"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610769020"
+				"hash": "1590294636777220"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64d.deps.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610495"
+				"hash": "1590294636495"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64d.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246102275328"
+				"hash": "15902946362305024"
 			},
 			{
 				"file": "bin/UnigineSharpCore_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246101057128"
+				"hash": "15902946361069732"
 			},
 			{
 				"file": "bin/UnigineWrapper_x64.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246092533888"
+				"hash": "15902946362541568"
 			},
 			{
 				"file": "bin/UnigineWrapper_x64d.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246094126208"
+				"hash": "15902946364147712"
 			},
 			{
 				"file": "bin/UnigineWrapper_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460918894848"
+				"hash": "159029463619001344"
 			},
 			{
 				"file": "bin/Unigine_x64.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460430828544"
+				"hash": "159029463630824448"
 			},
 			{
 				"file": "bin/Unigine_x64.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824604143831040"
+				"hash": "1590294636143781888"
 			},
 			{
 				"file": "bin/Unigine_x64d.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460538529024"
+				"hash": "159029463638519808"
 			},
 			{
 				"file": "bin/Unigine_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824605166342656"
+				"hash": "1590294636166301696"
 			},
 			{
 				"file": "bin/cspropgen_core_x64.deps.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610913"
+				"hash": "1590294636913"
 			},
 			{
 				"file": "bin/cspropgen_core_x64.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246107168"
+				"hash": "15902946367168"
 			},
 			{
 				"file": "bin/cspropgen_core_x64.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246101172"
+				"hash": "15902946361164"
 			},
 			{
 				"file": "bin/cspropgen_core_x64.runtimeconfig.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610154"
+				"hash": "1590294636154"
 			},
 			{
 				"file": "bin/cspropgen_core_x64d.deps.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610920"
+				"hash": "1590294636920"
 			},
 			{
 				"file": "bin/cspropgen_core_x64d.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246107168"
+				"hash": "15902946367168"
 			},
 			{
 				"file": "bin/cspropgen_core_x64d.pdb",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246101428"
+				"hash": "15902946361420"
 			},
 			{
 				"file": "bin/cspropgen_core_x64d.runtimeconfig.json",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610154"
+				"hash": "1590294636154"
 			},
 			{
 				"file": "bin/d3dcompiler_47.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246114310328"
+				"hash": "15902946364310328"
 			},
 			{
 				"file": "bin/imageformats/",
@@ -366,21 +366,21 @@
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982460532768"
+				"hash": "159029463632768"
 			},
 			{
 				"file": "bin/msvcp140.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824610633152"
+				"hash": "1590294636633152"
 			},
 			{
 				"file": "bin/openal32.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824611891904"
+				"hash": "1590294636891904"
 			},
 			{
 				"file": "bin/platforms/",
@@ -394,7 +394,7 @@
 				"tags": [
 					"binaries"
 				],
-				"hash": "15898246061446400"
+				"hash": "15902946361446400"
 			},
 			{
 				"file": "bin/styles/",
@@ -408,14 +408,14 @@
 				"tags": [
 					"binaries"
 				],
-				"hash": "1589824606136192"
+				"hash": "1590294636136192"
 			},
 			{
 				"file": "bin/vcruntime140.dll",
 				"tags": [
 					"binaries"
 				],
-				"hash": "158982461087888"
+				"hash": "159029463687888"
 			},
 			{
 				"file": "data/",
@@ -5744,7 +5744,7 @@
 				"tags": [
 					"unigine_data"
 				],
-				"hash": "158982462847106146"
+				"hash": "159029465247106146"
 			},
 			{
 				"file": "data/csharp_components.prop",
@@ -6885,7 +6885,7 @@
 				"tags": [
 					"unigine_data"
 				],
-				"hash": "15898246295034674"
+				"hash": "15902946535034674"
 			},
 			{
 				"file": "data/root_mount.umount",
@@ -6899,7 +6899,7 @@
 				"tags": [
 					"unigine_data"
 				],
-				"hash": "158982462826584"
+				"hash": "159029465226584"
 			},
 			{
 				"file": "data/shader_d3d11.cache",
@@ -6920,21 +6920,21 @@
 				"tags": [
 					"launcher_console"
 				],
-				"hash": "1589824629436"
+				"hash": "1590294653436"
 			},
 			{
 				"file": "launch_editor.bat",
 				"tags": [
 					"launcher_console"
 				],
-				"hash": "1589824629462"
+				"hash": "1590294653462"
 			},
 			{
 				"file": "launch_release.bat",
 				"tags": [
 					"launcher_console"
 				],
-				"hash": "1589824629435"
+				"hash": "1590294653435"
 			},
 			{
 				"file": "source/",
@@ -6974,23 +6974,23 @@
 		]
 	},
 	"sdk": {
-		"key": "communitybin2.11.0.1windows",
+		"key": "communitybin2.11.0.2windows",
 		"internal_id": "tier0_bin_windows",
 		"products": [
 			"tier0_bin"
 		],
 		"edition": "community",
-		"version": "2.11.0.1",
+		"version": "2.11.0.2",
 		"internal_version": "46",
 		"base_version": "",
-		"timestamp": "202004171714",
+		"timestamp": "202005211047",
 		"type": "bin",
 		"os": "windows",
-		"path": "C:/Program Files/UNIGINE/sdks/community_windows_2.11.0.1/",
+		"path": "C:/Program Files/UNIGINE/sdks/community_windows_2.11.0.2/",
 		"name": "UNIGINE 2 Community",
 		"resource": "sdk",
-		"size": "835459280",
-		"uncompressed_size": "2576844493",
+		"size": "835699422",
+		"uncompressed_size": "2577820496",
 		"activation_types": [
 			"2"
 		]

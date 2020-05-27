@@ -18,21 +18,25 @@ namespace UnigineECS
         {
             App.SetBackgroundUpdate(true);
             CreateMainWorld();
-            RegisterIComponents();
+            RegisterSystemsAndComponents();
 
             Log.Message("{0}", $"\nUnigineECS {stringVersion} has been initialized.\n");
-            new TestSystem(mainWorld);
         }
 
-        private static void RegisterIComponents()
+        private static void RegisterSystemsAndComponents()
         {
             foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
-                foreach (Type componentType in assembly.GetTypes())
+                foreach (Type scriptType in assembly.GetTypes())
                 {
-                    if (typeof(IComponent).IsAssignableFrom(componentType) && componentType.IsValueType)
+                    if (typeof(IComponent).IsAssignableFrom(scriptType) && scriptType.IsValueType)
                     {
-                        ECS_COMPONENT(mainWorld, componentType);
+                        ECS_COMPONENT(mainWorld, scriptType);
+                    }
+
+                    if (typeof(ComponentSystem).IsAssignableFrom(scriptType) && !scriptType.IsAbstract && scriptType.GetCustomAttribute(typeof(DisableAutoCreation)) == null)
+                    {
+                        Activator.CreateInstance(scriptType, new object[] { mainWorld });
                     }
                 }
             }
