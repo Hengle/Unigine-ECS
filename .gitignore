@@ -376,3 +376,4 @@ MigrationBackup/
 /source/.vs/
 /source/x64
 /Properties/
+/junk/*

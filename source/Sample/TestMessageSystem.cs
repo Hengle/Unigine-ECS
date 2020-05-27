@@ -6,7 +6,7 @@ using World = Flecs.World;
 
 public class TestSystem : ComponentSystem<Message>
 {
-    public TestSystem(World world) : base(world, SystemKind.OnSet)
+    public TestSystem(World world) : base(world, SystemKind.OnUpdate)
     {
         SetComponent(CreateEntity<Message>(), new Message { Value = Caches.AddUnmanagedString("Hello Flecs#!") });
     }
