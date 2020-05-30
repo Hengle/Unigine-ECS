@@ -27,7 +27,7 @@ namespace UnigineECS
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected EntityId CreateEntity<T>()
         {
-            return ecs.new_entity<Message>(world);
+            return ecs.new_entity<T>(world);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
